@@ -1,0 +1,1178 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+button,
+.button {
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.option {
+  border: 1px solid #e2e8f0;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 12px 0;
+  transition: 0.2s;
+}
+
+.option:hover {
+  border-color: #2563eb;
+  background: #f1f5f9;
+}
+
+.progressWrapper {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.progressBar {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+.option.selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+}
+
+.heroCard {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.subtitle {
+  margin: 16px 0 24px;
+  color: #555;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.linkTest {
+  display: block;
+  margin-top: 20px;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.authWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+}
+
+.authCard {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.errorText {
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.switchText {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.successText {
+  color: #16a34a;
+  font-size: 14px;
+}
+
+.dashboard {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card.full {
+  grid-column: span 2;
+}
+
+.quizWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.quizCard {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.questionBlock {
+  margin-bottom: 25px;
+}
+
+.questionText {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.progressText {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.radioCircle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #2563eb;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #2563eb;
+  border-radius: 50%;
+}
+
+/* === Figma Auth Design === */
+.figmaAuthWrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fdfbf3;
+  padding: 40px 20px;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.55;
+  z-index: 0;
+}
+
+.blob1 { width: 260px; height: 260px; background: #ffe28a; top: -60px; right: 15%; }
+.blob2 { width: 220px; height: 220px; background: #ffb6c9; top: 30%; right: -60px; }
+.blob3 { width: 240px; height: 240px; background: #b8def5; bottom: -60px; left: 10%; }
+.blob4 { width: 200px; height: 200px; background: #b9f0c5; bottom: -40px; right: 20%; }
+
+.figmaAuthContent {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.figmaAuthTitle {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2e2b5f;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.figmaAuthCard {
+  background: #3d3670;
+  border-radius: 24px;
+  padding: 32px 28px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.figmaForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.figmaForm input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #3d3670;
+  outline: none;
+}
+
+.figmaForm input::placeholder {
+  color: #9c96c9;
+}
+
+.figmaButtonWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.pillButton {
+  background: #8ec5f0;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 36px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pillButton:hover {
+  background: #6fb0e8;
+}
+
+.pillButton:disabled {
+  background: #a9b8c4;
+  cursor: not-allowed;
+}
+
+.figmaErrorText {
+  color: #ffb4b4;
+  font-size: 13px;
+  margin: 0;
+}
+
+.figmaSwitchText {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #2e2b5f;
+}
+
+.figmaSwitchText a {
+  color: #3d3670;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.figmaSuccessText {
+  color: #b6f0c2;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* === Figma Home Design === */
+.figmaHomeWrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fdfbf3;
+  padding: 40px 24px;
+}
+
+.hblob1 { position: absolute; width: 220px; height: 220px; border-radius: 50%; background: #ffe28a; filter: blur(40px); opacity: 0.5; top: -50px; left: 8%; z-index: 0; }
+.hblob2 { position: absolute; width: 220px; height: 220px; border-radius: 50%; background: #ffb6c9; filter: blur(40px); opacity: 0.5; top: 10%; right: -60px; z-index: 0; }
+.hblob3 { position: absolute; width: 220px; height: 220px; border-radius: 50%; background: #b8def5; filter: blur(40px); opacity: 0.5; bottom: -60px; left: -40px; z-index: 0; }
+.hblob4 { position: absolute; width: 200px; height: 200px; border-radius: 50%; background: #b9f0c5; filter: blur(40px); opacity: 0.5; bottom: -40px; right: 12%; z-index: 0; }
+
+.figmaHomeHeader {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.figmaHomeHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.figmaHomeTitle {
+  font-size: 22px;
+  font-weight: 800;
+  color: #2e2b5f;
+  margin: 0;
+}
+
+.figmaHomeSubtitle {
+  font-size: 13px;
+  color: #6b6690;
+  margin: 2px 0 0;
+}
+
+.figmaLogoutButton {
+  background: transparent;
+  border: 2px solid #3d3670;
+  color: #3d3670;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.figmaLogoutButton:hover {
+  background: #3d3670;
+  color: #ffffff;
+}
+
+.figmaHomeGrid {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.figmaHomeCard {
+  background: #3d3670;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.figmaHomeCard.full {
+  grid-column: span 2;
+}
+
+.figmaHomeCard h3 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 17px;
+}
+
+.figmaHomeCard p {
+  color: #cfc9ef;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.figmaHomeCardButton {
+  align-self: flex-start;
+  margin-top: 8px;
+  background: #8ec5f0;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.figmaHomeCardButton:hover {
+  background: #6fb0e8;
+}
+
+.figmaHomeCardButton.secondary {
+  background: transparent;
+  border: 2px solid #8ec5f0;
+}
+
+.figmaHomeCardButton.secondary:hover {
+  background: #8ec5f0;
+}
+
+@media (max-width: 640px) {
+  .figmaHomeGrid {
+    grid-template-columns: 1fr;
+  }
+  .figmaHomeCard.full {
+    grid-column: span 1;
+  }
+  .figmaHomeHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* === Figma Result (Hasil) Design === */
+.figmaResultWrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fdfbf3;
+  padding: 40px 20px;
+}
+
+.rblob1 { position: absolute; width: 220px; height: 220px; border-radius: 50%; background: #ffb6c9; filter: blur(40px); opacity: 0.5; top: -40px; right: 5%; z-index: 0; }
+.rblob2 { position: absolute; width: 200px; height: 200px; border-radius: 50%; background: #b8def5; filter: blur(40px); opacity: 0.5; bottom: -30px; left: 6%; z-index: 0; }
+.rblob3 { position: absolute; width: 180px; height: 180px; border-radius: 50%; background: #b9f0c5; filter: blur(40px); opacity: 0.5; bottom: 10%; right: 10%; z-index: 0; }
+
+.figmaResultInner {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.figmaResultBackButton {
+  background: transparent;
+  border: 2px solid #3d3670;
+  color: #3d3670;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: 0.2s;
+}
+
+.figmaResultBackButton:hover {
+  background: #3d3670;
+  color: #ffffff;
+}
+
+.figmaResultTitleCard {
+  background: #dbe9fb;
+  border-radius: 24px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+}
+
+.figmaResultCode {
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b4fa0;
+  letter-spacing: 0.5px;
+  margin: 0 0 6px;
+}
+
+.figmaResultTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #2e2b5f;
+  margin: 0 0 10px;
+}
+
+.figmaResultDescription {
+  font-size: 14px;
+  color: #4a4670;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.figmaResultCard {
+  border-radius: 18px;
+  padding: 22px 26px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.figmaResultCard.main { background: #3d3670; }
+.figmaResultCard.good { background: #2f8f52; }
+.figmaResultCard.bad { background: #8f3a2f; }
+.figmaResultCard.info { background: #3d6ea5; }
+
+.figmaResultCardLabel {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin: 0 0 6px;
+}
+
+.figmaResultCardLabel:not(:first-child) {
+  margin-top: 16px;
+}
+
+.figmaResultCardText {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* === Figma Admin Design === */
+.figmaAdminWrapper {
+  min-height: 100vh;
+  background: #fdfbf3;
+  padding: 40px 24px;
+}
+
+.figmaAdminInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.figmaAdminBackButton {
+  background: transparent;
+  border: 2px solid #3d3670;
+  color: #3d3670;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.figmaAdminBackButton:hover {
+  background: #3d3670;
+  color: #ffffff;
+}
+
+.figmaAdminTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #2e2b5f;
+  margin: 0 0 24px;
+}
+
+.figmaAdminSection {
+  background: #ffffff;
+  border: 1px solid #e5e0f5;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(61, 54, 112, 0.06);
+}
+
+.figmaAdminSectionTitle {
+  font-size: 16px;
+  font-weight: 800;
+  color: #3d3670;
+  margin: 0 0 16px;
+}
+
+.figmaAdminRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.figmaAdminInput,
+.figmaAdminSelect {
+  border: 1.5px solid #d9d3ec;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #2e2b5f;
+  outline: none;
+  flex: 1;
+  min-width: 160px;
+}
+
+.figmaAdminInput:focus,
+.figmaAdminSelect:focus {
+  border-color: #8ec5f0;
+}
+
+.figmaAdminButton {
+  background: #3d3670;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.figmaAdminButton:hover {
+  background: #2e2b5f;
+}
+
+.figmaAdminButtonSmall {
+  background: #8ec5f0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  border: none;
+  border-radius: 999px;
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.figmaAdminButtonSmall:hover {
+  background: #6fb0e8;
+}
+
+.figmaAdminButtonDanger {
+  background: transparent;
+  color: #c23b3b;
+  font-weight: 700;
+  font-size: 12px;
+  border: 1.5px solid #c23b3b;
+  border-radius: 999px;
+  padding: 6px 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.figmaAdminButtonDanger:hover {
+  background: #c23b3b;
+  color: #ffffff;
+}
+
+.figmaQuestionCard {
+  border: 1px solid #eee8fb;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  background: #fbfaff;
+}
+
+.figmaQuestionCardHeader {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2e2b5f;
+  margin: 0 0 12px;
+}
+
+.figmaQuestionCardBadge {
+  display: inline-block;
+  background: #3d3670;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 2px 10px;
+  margin-right: 8px;
+}
+
+.figmaOptionRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0;
+  padding-left: 4px;
+}
+
+/* === Figma History Design === */
+.figmaHistoryWrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fdfbf3;
+  padding: 40px 20px;
+}
+
+.hyblob1 { position: absolute; width: 200px; height: 200px; border-radius: 50%; background: #b8def5; filter: blur(40px); opacity: 0.5; top: -40px; left: 8%; z-index: 0; }
+.hyblob2 { position: absolute; width: 200px; height: 200px; border-radius: 50%; background: #ffe28a; filter: blur(40px); opacity: 0.5; bottom: -30px; right: 6%; z-index: 0; }
+
+.figmaHistoryInner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.figmaHistoryBackButton {
+  background: transparent;
+  border: 2px solid #3d3670;
+  color: #3d3670;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: 0.2s;
+}
+
+.figmaHistoryBackButton:hover {
+  background: #3d3670;
+  color: #ffffff;
+}
+
+.figmaHistoryTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #2e2b5f;
+  margin: 0 0 20px;
+}
+
+.figmaHistoryEmpty {
+  background: #dbe9fb;
+  border-radius: 16px;
+  padding: 24px;
+  color: #3d3670;
+  font-size: 14px;
+  text-align: center;
+}
+
+.figmaHistoryCard {
+  background: #3d3670;
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.figmaHistoryType {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.figmaHistoryDate {
+  color: #cfc9ef;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+/* === Figma Quiz Design === */
+.figmaQuizWrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fdfbf3;
+  padding: 40px 20px;
+}
+
+.qblob1 { position: absolute; width: 180px; height: 180px; border-radius: 50%; background: #b8def5; filter: blur(30px); opacity: 0.6; bottom: -40px; left: 5%; z-index: 0; }
+.qblob2 { position: absolute; width: 180px; height: 180px; border-radius: 50%; background: #ffb6c9; filter: blur(30px); opacity: 0.6; bottom: -30px; right: 8%; z-index: 0; }
+
+.figmaQuizTopBar {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.figmaLogoBadge {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(#f4b6c2, #ffe28a, #a8dab5, #8ec5f0, #b39ddb, #f4b6c2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.figmaLogoBadgeInner {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fdfbf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 800;
+  color: #3d3670;
+  text-align: center;
+}
+
+.figmaQuizLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b4fa0;
+  letter-spacing: 0.5px;
+}
+
+.figmaQuizOuter {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #dbe9fb;
+  border-radius: 28px;
+  padding: 32px;
+}
+
+.figmaProgressWrapper {
+  width: 100%;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.figmaProgressBar {
+  height: 100%;
+  background: #3d3670;
+  border-radius: 999px;
+  transition: width 0.3s;
+}
+
+.figmaProgressText {
+  font-size: 13px;
+  color: #3d3670;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.figmaQuestionText {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2e2b5f;
+  margin-bottom: 20px;
+}
+
+.figmaOptionCard {
+  background: #3d3670;
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: 0.2s;
+}
+
+.figmaOptionCard:hover {
+  border-color: #8ec5f0;
+}
+
+.figmaOptionCard.selected {
+  border-color: #ffb6c9;
+}
+
+.figmaOptionLetter {
+  color: #ff4d6d;
+  font-weight: 800;
+  font-size: 20px;
+  min-width: 22px;
+  line-height: 1.4;
+}
+
+.figmaOptionText {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* === Figma Admin Users Design === */
+.figmaAdminUserRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #eee8fb;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  background: #fbfaff;
+  flex-wrap: wrap;
+}
+
+.figmaAdminUserInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.figmaAdminUserName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2e2b5f;
+  margin: 0;
+}
+
+.figmaAdminUserMeta {
+  font-size: 12px;
+  color: #7a749c;
+  margin: 0;
+}
+
+.figmaAdminUserBadgeAdmin {
+  display: inline-block;
+  background: #ffb6c9;
+  color: #7a1f3a;
+  font-size: 10px;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 2px 10px;
+  margin-left: 8px;
+}
+
+/* Modal overlay for user history */
+.figmaModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(46, 43, 95, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.figmaModalBox {
+  background: #fdfbf3;
+  border-radius: 20px;
+  max-width: 640px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px;
+  position: relative;
+}
+
+.figmaModalCloseButton {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: transparent;
+  border: 2px solid #3d3670;
+  color: #3d3670;
+  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  font-weight: 800;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.figmaModalCloseButton:hover {
+  background: #3d3670;
+  color: #ffffff;
+}
+
+.figmaModalTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #2e2b5f;
+  margin: 0 0 18px;
+  padding-right: 40px;
+}
+
+.figmaModalResultCard {
+  background: #3d3670;
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+
+.figmaModalResultType {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0 0 4px;
+}
+
+.figmaModalResultDesc {
+  color: #cfc9ef;
+  font-size: 13px;
+  margin: 0 0 6px;
+  line-height: 1.5;
+}
+
+.figmaModalResultDate {
+  color: #9d97c9;
+  font-size: 11px;
+  margin: 0;
+}
+
+.figmaModalEmpty {
+  background: #dbe9fb;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  color: #3d3670;
+  font-size: 13px;
+}
+
+/* === Figma Landing (Index) Design === */
+.figmaLandingWrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fdfbf3;
+  padding: 40px 20px;
+}
+
+.lblob1 { position: absolute; width: 260px; height: 260px; border-radius: 50%; background: #ffe28a; filter: blur(40px); opacity: 0.55; top: -60px; left: 10%; z-index: 0; }
+.lblob2 { position: absolute; width: 220px; height: 220px; border-radius: 50%; background: #ffb6c9; filter: blur(40px); opacity: 0.55; top: 20%; right: -60px; z-index: 0; }
+.lblob3 { position: absolute; width: 240px; height: 240px; border-radius: 50%; background: #b8def5; filter: blur(40px); opacity: 0.55; bottom: -60px; right: 15%; z-index: 0; }
+.lblob4 { position: absolute; width: 200px; height: 200px; border-radius: 50%; background: #b9f0c5; filter: blur(40px); opacity: 0.55; bottom: -40px; left: 8%; z-index: 0; }
+
+.figmaLandingContent {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 460px;
+  text-align: center;
+}
+
+.figmaLandingLogoWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.figmaLandingTitle {
+  font-size: 30px;
+  font-weight: 800;
+  color: #2e2b5f;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.figmaLandingCard {
+  background: #3d3670;
+  border-radius: 24px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.figmaLandingSubtitle {
+  color: #cfc9ef;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+
+.figmaLandingButtonGroup {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pillButtonSecondary {
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  border: 2px solid #8ec5f0;
+  border-radius: 999px;
+  padding: 12px 32px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.pillButtonSecondary:hover {
+  background: #8ec5f0;
+}
+
+.figmaLandingLinkTest {
+  display: inline-block;
+  margin-top: 22px;
+  color: #6b4fa0;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.figmaLandingLinkTest:hover {
+  text-decoration: underline;
+}
